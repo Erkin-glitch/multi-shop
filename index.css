@@ -495,57 +495,47 @@
     width: 100%;
     display: flex;
     gap: 80px;
+    position: relative;
+    flex-wrap: wrap;
 }
 .content__1{
     display: flex;
     background-color: white;
     flex-direction: column;
     align-items: center;
-    position: relative;
     gap: 15px;
 }
 .rectangles{
-    position: absolute;
-    top: 100px;
-    right: 90px;
-    opacity: 1;
-    transition: 0.5s;
-    opacity: 0;
-    width: 100%;
     display: flex;
-    gap: 20px;
+    position: absolute;
+    transition: 0.5s;
+    width: 17%;
+    opacity: 0;
+    display: flex;
+    gap: 10px;
+    top: 80px;
+    justify-content: center;
 }
 .rectangles__1{
-    position: absolute;
-    top: 10px;
     border: 1px solid black;
-    width: 30px;
-    height: 30px;
-    right: 50px;
+    width: 40px;
+    height: 40px;
+
 }
 .rectangles__2{
-    position: absolute;
-    top: 10px;
     border: 1px solid black;
-    width: 30px;
-    height: 30px;
-    right: 15px;
+    width: 40px;
+    height: 40px;
 }
 .rectangles__3{
-    position: absolute;
-    top: 10px;
     border: 1px solid black;
-    width: 30px;
-    height: 30px;
-    right: -20px;
+    width: 40px;
+    height: 40px;
 }
 .rectangles__4{
-    position: absolute;
-    top: 10px;
     border: 1px solid black;
-    width: 30px;
-    height: 30px;
-    right: -55px;
+    width: 40px;
+    height: 40px;
 }
 .img__wrapper{
      width: 200px;
@@ -556,6 +546,10 @@
     width: 200px;
     height: 200px;
     transition: 0.5s;
+}
+.content__1:hover .img__wrapper img{
+    transform: scale(1.5);
+    opacity: 0.8;
 }
 .content__text{
     display: flex;
@@ -586,18 +580,22 @@
 
 .rectangles:hover {
     opacity: 1;
-}
+    transform: translateY(0);
+}  
  .rectangles__1:hover {
     background-color: black;
 }
  .rectangles__2:hover {
     background-color: black;
+  
 }
   .rectangles__3:hover{
    background-color: black;
+   
 }
  .rectangles__4:hover {
     background-color: black;
+     
 }
 .images{
     display: flex;
